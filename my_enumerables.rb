@@ -91,6 +91,14 @@ p input.my_count(2)
 puts "my_inject:"
 p input.my_inject(10) { |sum, i| sum += 1 }
 
+#my_multiply_els
+puts "multiply_els:"
+p multiply_els(input)
+
+#my_map
+puts "my_map:"
+
+
 
 
 
