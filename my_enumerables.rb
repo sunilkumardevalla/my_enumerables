@@ -40,13 +40,12 @@ module Enumerable
     count
   end
 
-  def 
+  def my_inject(result = 0)
+    self.my_each { |i| result = yield(result, i) }
+    result
+  end
 
-
-
-
-
-
+  
 
 end
 
