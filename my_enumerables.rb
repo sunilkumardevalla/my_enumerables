@@ -45,7 +45,7 @@ module Enumerable
     result
   end
 
-  
+
 
 end
 
@@ -82,6 +82,12 @@ p input.my_none? { |i| i < 5 }
 #my_count
 puts "my_count:"
 p input.my_count(2)
+
+#my_inject
+puts "my_inject:"
+p input.my_inject(10) { |sum, i| sum += 1 }
+
+
 
 
 
