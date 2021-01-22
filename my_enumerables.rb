@@ -45,6 +45,10 @@ module Enumerable
     result
   end
 
+  def multiplt_els(array)
+    self.my_inject(1) { |nulti, i| multi * i }
+  end
+
 
 
 end
