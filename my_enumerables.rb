@@ -30,7 +30,7 @@ module Enumerable
 
   def my_none?
     result = true
-    self.my_each { |i| break = false if yield(i) }
+    self.my_each { |i| break result = false if yield(i) }
     result
   end
 
@@ -45,14 +45,21 @@ module Enumerable
     result
   end
 
-  def multiplt_els(array)
-    self.my_inject(1) { |nulti, i| multi * i }
+  def my_map(proc=nil)
+    array = []
+    block_given? ?
+      self.my_each { |i| array << yield(i) } : 
+      self.my_each { |i| array << proc.call(i) }
+    array
   end
-
-
 
 end
 
+def multiply_els(array)
+  array.my_inject(1) { |product, i| product * i }
+end
+
+proc = Proc.new { |i| i * 2 }
 
 #Tests
 
@@ -97,6 +104,7 @@ p multiply_els(input)
 
 #my_map
 puts "my_map:"
+p input.my_map(proc) { |i| i * 2 }
 
 
 
