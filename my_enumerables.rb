@@ -104,7 +104,7 @@ p multiply_els(input)
 
 # my_map
 puts "my_map:"
-p input.my_map(my_proc) { |i| i * 2 }
+p input.my_map(proc) { |i| i * 2 }
 
 
 
