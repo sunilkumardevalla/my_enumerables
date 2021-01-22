@@ -1,6 +1,6 @@
 # my_enumerables
 
-In this project, you will implement your own version of Ruby’s enumerable methods.
+In this project, we have implemented our own version of Ruby’s enumerable methods.
 
 ## Screenshot of the output
 
