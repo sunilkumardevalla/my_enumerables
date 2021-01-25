@@ -1,7 +1,8 @@
 name: Linters
 
 on: pull_request
-
+Style:
+  Enabled: false
 jobs:
   rubocop:
     name: Rubocop
